@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ android:padding="16dp">
+ <!-- Output TextView -->
+ <TextView
+ android:id="@+id/tvResult"
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:text="0"
+ android:gravity="end"
+ android:textSize="32sp"
+ android:padding="16dp"
+ android:background="#EEE"
+android:layout_alignParentTop="true" />
+ <!-- Number Buttons and Operator Buttons -->
+ <GridLayout
+ android:layout_width="match_parent"
+ android:layout_height="wrap_content"
+ android:layout_below="@id/tvResult"
+ android:layout_marginTop="16dp"
+ android:columnCount="4"
+ android:rowCount="5">
+ <!-- Row 1: Number Buttons -->
+ <Button android:id="@+id/btn7" android:layout_column="0" android:text="7"/>
+ <Button android:id="@+id/btn8" android:layout_column="1" android:text="8"/>
+ <Button android:id="@+id/btn9" android:layout_column="2" android:text="9"/>
+ <Button android:id="@+id/btnDivide" android:layout_column="3" android:text="/"/>
+ <!-- Row 2 -->
+ <Button android:id="@+id/btn4" android:text="4"/>
+ <Button android:id="@+id/btn5" android:text="5"/>
+ <Button android:id="@+id/btn6" android:text="6"/>
+ <Button android:id="@+id/btnMultiply" android:text="*"/>
+ <!-- Row 3 -->
+ <Button android:id="@+id/btn1" android:text="1"/>
+ <Button android:id="@+id/btn2" android:text="2"/>
+ <Button android:id="@+id/btn3" android:text="3"/>
+ <Button android:id="@+id/btnSubtract" android:text="-"/>
+ <!-- Row 4 -->
+ <Button android:id="@+id/btn0" android:text="0"/>
+ <Button android:id="@+id/btnClear" android:text="C"/>
+ <Button android:id="@+id/btnEqual" android:text="="/>
+ <Button android:id="@+id/btnAdd" android:text="+"/>
+ </GridLayout>
+</RelativeLayout>
